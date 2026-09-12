@@ -1,6 +1,7 @@
 # NUC system reference
 
-Captured from `igvc-NUC12DCMi9` before the rebuild.
+Captured from `igvc-NUC12DCMi9` on 3 September 2026, ahead of a planned rebuild that has not
+happened yet. The machine is still running this configuration.
 
 ## udev rules
 

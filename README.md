@@ -1,7 +1,10 @@
 # Rutgers IGVC — robot archive
 
 Everything the team has, in one place, as of September 2026: the software pulled off the
-competition NUC before it was wiped, the PCB exports, the lab photos, and the notes.
+competition NUC, the PCB exports, the lab photos, and the notes.
+
+The NUC (`igvc-NUC12DCMi9`) has **not** been wiped yet — a rebuild is planned but hasn't happened.
+This archive exists so that when it does, nothing is lost.
 
 This is a save, not a live project. Work on the robot happens elsewhere — this is what exists
 today so none of it gets lost again.
@@ -23,9 +26,9 @@ part.
 
 ## Why this repo exists
 
-`autonomy/diff_drive_robot` had never been committed anywhere. It lived as an uncommitted working
-tree on one machine — `igvc-NUC12DCMi9` — which was about to be wiped. One reinstall would have
-erased it permanently. This is the only copy.
+`autonomy/diff_drive_robot` had never been committed anywhere. It lives as an uncommitted working
+tree on one machine — `igvc-NUC12DCMi9` — which is due to be rebuilt. A reinstall would erase it
+permanently. Until that machine is wiped there are two copies; after, this is the only one.
 
 The rest was gathered at the same time because it was scattered across that NUC, a Drive folder,
 and a Desktop directory, and nobody could have found it in six months.

@@ -1,7 +1,9 @@
 # NUC backup index
 
-Full-fidelity `tar + zstd` archives of `igvc-NUC12DCMi9`, taken 3 September 2026 before the
-machine was rebuilt. They live in the team Google Drive at `nuc-backup/tar/`.
+Full-fidelity `tar + zstd` archives of `igvc-NUC12DCMi9`, taken 3 September 2026 ahead of a
+planned rebuild. **The rebuild has not happened** — the machine is still running the system these
+archives describe, so anything missing here can also be pulled straight off it. The archives live
+in the team Google Drive at `nuc-backup/tar/`.
 
 **162 archives, 102.4 GiB total.** Both completion markers (`p3.ALLDONE`, `p5.ALLDONE`) were present,
 so the set is complete.
