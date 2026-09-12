@@ -1,0 +1,40 @@
+normal:
+  cones: [15, 30]
+  barricades: [3, 8]
+  potholes: [5, 15]
+  ramp: true
+  lighting: normal
+  obstacle_spacing_scale: 1.0
+
+sparse:
+  cones: [5, 12]
+  barricades: [1, 4]
+  potholes: [2, 6]
+  ramp: true
+  lighting: normal
+  obstacle_spacing_scale: 1.0
+
+dense:
+  cones: [30, 50]
+  barricades: [8, 14]
+  potholes: [10, 25]
+  ramp: true
+  lighting: normal
+  obstacle_spacing_scale: 0.8
+
+bad_lighting:
+  cones: [15, 30]
+  barricades: [3, 8]
+  potholes: [5, 15]
+  ramp: true
+  lighting: randomized_extreme
+  obstacle_spacing_scale: 1.0
+
+no_mans_land_dense:
+  cones: [10, 20]
+  barricades: [5, 10]
+  potholes: [5, 15]
+  ramp: true
+  lighting: normal
+  bias_obstacles_to_no_mans_land: true
+  obstacle_spacing_scale: 0.9

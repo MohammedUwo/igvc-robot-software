@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>igvc_odrive_interface</name>
+  <version>0.1.0</version>
+  <description>Safe ROS 2 telemetry and command gate for ODrive V3.6.</description>
+  <maintainer email="igvc@example.com">IGVC</maintainer>
+  <license>MIT</license>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>diagnostic_msgs</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+  <test_depend>ament_pytest</test_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>

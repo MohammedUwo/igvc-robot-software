@@ -1,0 +1,46 @@
+robot:
+  width_m: 2.5
+  safety_margin_m: 1.5
+
+regions:
+  lane_course:
+    polygon:
+      - [-60.0, -50.0]
+      - [60.0, -50.0]
+      - [60.0, 50.0]
+      - [-60.0, 50.0]
+  no_mans_land:
+    polygon:
+      - [-18.0, 8.0]
+      - [18.0, 8.0]
+      - [18.0, 28.0]
+      - [-18.0, 28.0]
+  ramp_allowed:
+    polygon:
+      - [-18.0, 8.0]
+      - [18.0, 8.0]
+      - [18.0, 28.0]
+      - [-18.0, 28.0]
+
+forbidden_zones:
+  - name: start_zone
+    polygon:
+      - [-8.0, -46.0]
+      - [8.0, -46.0]
+      - [8.0, -34.0]
+      - [-8.0, -34.0]
+
+lane_markings:
+  track_width_ft: 12
+  turn_radius_ft: 18
+  center: [0.0, 0.0]
+
+ramp:
+  width_ft: 10
+  total_length_ft: 16
+  incline_length_ft: 8
+  decline_length_ft: 8
+  max_elevation_ft: 1
+  approach_clearance_m: 5.0
+  exit_clearance_m: 5.0
+  side_clearance_m: 2.0

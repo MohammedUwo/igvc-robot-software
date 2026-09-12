@@ -1,0 +1,7 @@
+serial_watchdog:
+  ros__parameters:
+    expected_paths:
+      - /dev/igvc_estop
+      - /dev/igvc_rplidar
+      - /dev/igvc_gps
+    publish_rate_hz: 2.0

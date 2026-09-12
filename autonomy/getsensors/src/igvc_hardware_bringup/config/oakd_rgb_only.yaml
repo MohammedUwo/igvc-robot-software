@@ -1,0 +1,10 @@
+oak:
+  ros__parameters:
+    camera:
+      i_mx_id: "1844301051345D0E00"
+      i_nn_type: none
+      i_pipeline_type: RGB
+    rgb:
+      i_resolution: '1080P'
+      i_fps: 10.0
+      i_low_bandwidth: true

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>igvc_hardware_bringup</name>
+  <version>0.1.0</version>
+  <description>Launch, configuration, udev, and documentation for IGVC robot hardware bringup.</description>
+  <maintainer email="igvc@example.com">IGVC</maintainer>
+  <license>MIT</license>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>realsense2_camera</exec_depend>
+  <exec_depend>depthai_ros_driver</exec_depend>
+  <exec_depend>diagnostic_msgs</exec_depend>
+  <exec_depend>nmea_navsat_driver</exec_depend>
+  <exec_depend>rplidar_ros</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <test_depend>ament_pytest</test_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>

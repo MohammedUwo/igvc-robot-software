@@ -1,0 +1,10 @@
+estop_current_node:
+  ros__parameters:
+    port: /dev/ttyUSB0
+    baud: 115200
+    publish_rate_hz: 4.0
+    stale_timeout_s: 1.5
+    zero_offset_v: 0.5
+    sensitivity_v_per_a: 0.04
+    current_sign: 1.0
+    nominal_bus_voltage_v: 24.0

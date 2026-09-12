@@ -1,0 +1,8 @@
+serial_permissions:
+  ros__parameters:
+    expected_paths:
+      - /dev/ttyUSB0
+      - /dev/ttyUSB1
+      - /dev/ttyACM0
+      - /dev/ttyACM1
+    publish_rate_hz: 1.0

@@ -13,16 +13,18 @@ today so none of it gets lost again.
 
 | Folder | Size | Contents |
 |---|---:|---|
-| `autonomy/` | 45 files | The ROS 2 package the robot runs — `diff_drive_robot`, ~2,300 lines: lane detection, lidar driver, obstacle avoidance, GPS waypoints, ODrive motor control, plus URDF and Gazebo worlds |
+| `autonomy/` | 2 workspaces | `diff_drive_robot` — the driving stack: lane detection, obstacle avoidance, GPS waypoints, behaviour arbitration, Gazebo model. `getsensors` — the hardware layer: verified drivers and configs for the lidar, cameras, GPS, ODrive and e-stop board |
+| `simulation/` | 1 package | Seeded IGVC course generator — makes randomised AutoNav worlds for Gazebo |
 | `hardware/schematics/` | 18 projects | Every EasyEDA board the team has designed — schematics as SVG, layouts as fab PDFs. E-stop RX/TX, LED controller, power distribution, IMU handler, and the rest |
 | `photos/` | 156 photos | The robot (108) and the lab stock (48), September 2026 |
-| `docs/` | 4 files | The build plan, a long writeup of how the autonomy works, the lab inventory, and an index of the NUC backup |
+| `docs/` | 5 files | The build plan, a long writeup of how the autonomy works, the lab inventory, an index of the NUC backup, and the course-generator handoff |
 | `system/` | 22 files | What the NUC was: partition table, package lists, hardware inventory, and the 5 udev rules that give the sensors stable device names |
 | `legacy/` | 2 files | Safety-light code from the 2021–22 robot. Still the best reference we have for that. |
 
 Start with [`docs/qualification-plan.md`](docs/qualification-plan.md) if you want to know what
-needs doing, or [`docs/lab-inventory.md`](docs/lab-inventory.md) if you're new and looking for a
-part.
+needs doing, [`docs/lab-inventory.md`](docs/lab-inventory.md) if you're new and looking for a part,
+or [`autonomy/getsensors/docs/hardware_inventory.md`](autonomy/getsensors/docs/hardware_inventory.md)
+for the real device serials, ports and firmware versions.
 
 ## Why this repo exists
 
@@ -66,11 +68,13 @@ Rutgers work on top of it.
 | Part | Notes |
 |---|---|
 | Intel NUC12DCMi9 | 64 GB RAM, RTX 3060, Ubuntu 22.04, ROS 2 Humble |
-| RPLIDAR A1 | 0.15–12 m, shows up as `/dev/rplidar` |
-| Luxonis OAK-D | DepthAI |
-| Intel RealSense | librealsense2 |
-| Emlid Reach RS+ | NMEA over TCP, `192.168.1.100:2101` |
-| ODrive v3.x | Two axes, 4096 cpr, 3 pole pairs |
+| Motors | 2 × Nanotec `DB59L024035R-B` BLDC |
+| ODrive V3.6 | Serial `315B32623431`, firmware 0.5.6, ~24 V bus, 4096 cpr |
+| RPLIDAR A-series | S/N `EFFC9DF1C3E39AC4C3E698F91F2B340D`, firmware 1.24 |
+| Intel RealSense D435 | Serial `939622074571`, firmware 5.17.0.10 |
+| Luxonis OAK-D | Not enumerating as of May 2026 — see `autonomy/getsensors/docs/` |
+| Emlid Reach RS+ | GPS over serial and TCP |
+| ESP32 e-stop / current board | 115200 baud. **Triggering the e-stop cuts USB hub power** — every hub peripheral drops at once. |
 | Battery | 24 V 50 Ah |
 
 ## What's not here

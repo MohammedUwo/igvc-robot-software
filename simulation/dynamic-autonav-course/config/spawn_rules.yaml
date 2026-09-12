@@ -1,0 +1,23 @@
+barrels:
+  count_range: [3, 24]
+  min_spacing_ft: 5.0
+  colors: [white, orange, brown, green, black]
+drums:
+  count_range: [4, 12]
+  min_spacing_ft: 5.0
+  colors: [white, orange, brown, green, black]
+potholes:
+  count_range: [3, 8]
+  diameter_ft: 2.0
+clearance:
+  min_line_obstacle_clearance_ft: 5.0
+  min_passage_width_ft: 5.0
+obstacle_placement:
+  probability_per_tile: 0.15
+  min_spacing_ft: 25
+  avoid_start_distance_ft: 30
+  avoid_finish_distance_ft: 20
+  avoid_ramp_distance_ft: 20
+ramp:
+  count: 1
+  allowed_tiles: [ramp_straight]

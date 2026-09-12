@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="ramp">
+    <static>true</static>
+    <link name="ramp_wedge">
+      <visual name="ramp_wedge_incline">
+        <pose>0 -4 0.5 0.124355 0 0</pose>
+        <geometry><box><size>10 8 0.12</size></box></geometry>
+        <material><ambient>0.45 0.45 0.45 1</ambient><diffuse>0.45 0.45 0.45 1</diffuse></material>
+      </visual>
+      <collision name="ramp_wedge_incline_collision">
+        <pose>0 -4 0.5 0.124355 0 0</pose>
+        <geometry><box><size>10 8 0.12</size></box></geometry>
+      </collision>
+      <visual name="ramp_wedge_decline">
+        <pose>0 4 0.5 -0.124355 0 0</pose>
+        <geometry><box><size>10 8 0.12</size></box></geometry>
+        <material><ambient>0.45 0.45 0.45 1</ambient><diffuse>0.45 0.45 0.45 1</diffuse></material>
+      </visual>
+      <collision name="ramp_wedge_decline_collision">
+        <pose>0 4 0.5 -0.124355 0 0</pose>
+        <geometry><box><size>10 8 0.12</size></box></geometry>
+      </collision>
+      <visual name="ramp_lane_left">
+        <pose>-4.5 0 1.04 0 0 0</pose>
+        <geometry><box><size>0.25 16 0.025</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ramp_lane_right">
+        <pose>4.5 0 1.04 0 0 0</pose>
+        <geometry><box><size>0.25 16 0.025</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ramp_centerline">
+        <pose>0 0 1.05 0 0 0</pose>
+        <geometry><box><size>0.12 16 0.025</size></box></geometry>
+        <material><ambient>0 0.8 1 1</ambient><diffuse>0 0.8 1 1</diffuse></material>
+      </visual>
+    </link>
+  </model>
+</sdf>

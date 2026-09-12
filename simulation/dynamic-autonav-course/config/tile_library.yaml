@@ -1,0 +1,114 @@
+tile_size: 14.2
+lane_width: 3.658
+line_width: 0.12
+sample_spacing: 0.5
+
+# Local coordinates: tile center is [0, 0], +X east, +Y north.
+tiles:
+  straight:
+    entry_side: south
+    exit_side: north
+    entry_heading: north
+    exit_heading: north
+    centerline: [[0.0, -6.0], [0.0, 6.0]]
+    allowed: {cones: true, potholes: true, barricades: true, ramp: false}
+  gentle_left:
+    entry_side: south
+    exit_side: west
+    entry_heading: north
+    exit_heading: west
+    curve_type: catmull_rom
+    centerline: [[0.0, -6.0], [0.0, -4.0], [-2.0, -2.0], [-4.0, 0.0], [-6.0, 0.0]]
+    allowed: {cones: true, potholes: true, barricades: false, ramp: false}
+  gentle_right:
+    entry_side: south
+    exit_side: east
+    entry_heading: north
+    exit_heading: east
+    curve_type: catmull_rom
+    centerline: [[0.0, -6.0], [0.0, 0.0], [6.0, 0.0]]
+    allowed: {cones: true, potholes: true, barricades: false, ramp: false}
+  hard_left:
+    entry_side: south
+    exit_side: west
+    entry_heading: north
+    exit_heading: west
+    curve_type: catmull_rom
+    centerline: [[0.0, -6.0], [-0.5, -2.5], [-3.0, -0.5], [-6.0, 0.0]]
+    allowed: {cones: true, potholes: false, barricades: false, ramp: false}
+  hard_right:
+    entry_side: south
+    exit_side: east
+    entry_heading: north
+    exit_heading: east
+    curve_type: catmull_rom
+    centerline: [[0.0, -6.0], [0.5, -2.5], [3.0, -0.5], [6.0, 0.0]]
+    allowed: {cones: true, potholes: false, barricades: false, ramp: false}
+  s_chicane_left_right:
+    entry_side: south
+    exit_side: north
+    entry_heading: north
+    exit_heading: north
+    curve_type: catmull_rom
+    centerline: [[0.0, -6.0], [-1.0, -3.0], [1.0, 3.0], [0.0, 6.0]]
+    allowed: {cones: true, potholes: true, barricades: false, ramp: false}
+  s_chicane_right_left:
+    entry_side: south
+    exit_side: north
+    entry_heading: north
+    exit_heading: north
+    curve_type: catmull_rom
+    centerline: [[0.0, -6.0], [1.0, -3.0], [-1.0, 3.0], [0.0, 6.0]]
+    allowed: {cones: true, potholes: true, barricades: false, ramp: false}
+  lane_gap:
+    entry_side: south
+    exit_side: north
+    entry_heading: north
+    exit_heading: north
+    lane_gap: true
+    centerline: [[0.0, -6.0], [0.0, 6.0]]
+    allowed: {cones: true, potholes: true, barricades: true, ramp: false}
+  no_mans_land_entry:
+    entry_side: south
+    exit_side: north
+    entry_heading: north
+    exit_heading: north
+    centerline: [[0.0, -6.0], [0.0, 6.0]]
+    allowed: {cones: false, potholes: false, barricades: false, ramp: false}
+  no_mans_land_exit:
+    entry_side: south
+    exit_side: north
+    entry_heading: north
+    exit_heading: north
+    centerline: [[0.0, -6.0], [0.0, 6.0]]
+    allowed: {cones: false, potholes: false, barricades: false, ramp: false}
+  no_lane_zone:
+    entry_side: south
+    exit_side: north
+    entry_heading: north
+    exit_heading: north
+    no_lane_markings: true
+    centerline: [[0.0, -6.0], [0.0, 6.0]]
+    allowed: {cones: true, potholes: true, barricades: true, ramp: false}
+  ramp_straight:
+    entry_side: south
+    exit_side: north
+    entry_heading: north
+    exit_heading: north
+    feature: ramp
+    centerline: [[0.0, -6.0], [0.0, 6.0]]
+    allowed: {cones: false, potholes: false, barricades: false, ramp: true}
+  ramp_zone:
+    entry_side: south
+    exit_side: north
+    entry_heading: north
+    exit_heading: north
+    centerline: [[0.0, -6.0], [0.0, 6.0]]
+    allowed: {cones: false, potholes: false, barricades: false, ramp: false}
+  obstacle_zone:
+    entry_side: south
+    exit_side: north
+    entry_heading: north
+    exit_heading: north
+    centerline: [[0.0, -6.0], [0.0, 6.0]]
+    allowed: {cones: true, potholes: true, barricades: true, ramp: false}

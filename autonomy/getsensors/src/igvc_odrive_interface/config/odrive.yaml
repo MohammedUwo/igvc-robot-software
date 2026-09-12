@@ -1,0 +1,9 @@
+odrive_node:
+  ros__parameters:
+    serial_number: "315B32623431"
+    axis: axis1
+    joint_name: odrive_m1_joint
+    telemetry_rate_hz: 10.0
+    command_enabled: false
+    safety_timeout_s: 1.0
+    command_timeout_s: 0.5
