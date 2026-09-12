@@ -13,10 +13,20 @@ uncommitted working tree on that one machine. Treat this repo as the authoritati
 | Path | What it is |
 |---|---|
 | `autonomy/diff_drive_robot/` | The ROS 2 autonomy package — nodes, launch files, configs, URDF, Gazebo worlds |
-| `docs/ros_knowledge.md` | Long-form internal writeup of how the stack works, written by a previous member. Start here. |
+| `docs/qualification-plan.md` | **The plan.** Ten gates, current status, order of work, budget. Start here. |
+| `docs/ros_knowledge.md` | Long-form internal writeup of how the autonomy stack works, by a previous member |
+| `docs/lab-inventory.md` | Where everything in the lab is and what it's for. Written for new members. |
+| `docs/nuc-backup-index.md` | Index of all 162 NUC backup archives in Drive, and how to restore one |
 | `system/udev/` | udev rules that give the robot's hardware stable device names. Copy to `/etc/udev/rules.d/` on any new install. |
 | `system/manifest/` | NUC hardware and package inventory — partition table, fstab, installed packages, `lspci`/`lsusb`/`dmidecode` |
 | `legacy/pathfinder-led/` | Safety-light control from the 2021–22 robot (ROS 1 + Arduino). Reference for the IGVC safety-light requirement. |
+
+## Related repositories
+
+| Repo | What it holds |
+|---|---|
+| [ozatyx/rutgers_igvc_electrical](https://github.com/ozatyx/rutgers_igvc_electrical) | E-stop transmitter/receiver firmware, the E-stop + current-sensing PCB, ODrive config, power distribution diagrams, manual control. Clean and fully pushed — nothing at risk there. |
+| [Rutgers-IGVC-2026-2027/Old-Robot-](https://github.com/Rutgers-IGVC-2026-2027/Old-Robot-) | Team-org copy of this same recovery |
 
 ## The autonomy package
 
