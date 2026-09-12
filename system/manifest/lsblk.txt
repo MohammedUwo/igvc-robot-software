@@ -1,0 +1,38 @@
+NAME        FSTYPE   UUID                                 LABEL   SIZE MOUNTPOINT
+loop0       squashfs                                                4K /snap/bare/5
+loop1       squashfs                                            494.2M /snap/code/242
+loop2       squashfs                                            425.9M /snap/code/247
+loop3       squashfs                                            105.1M /snap/core/17284
+loop4       squashfs                                            105.2M /snap/core/17292
+loop5       squashfs                                             63.8M /snap/core20/2769
+loop6       squashfs                                             63.8M /snap/core20/2866
+loop7       squashfs                                               74M /snap/core22/2339
+loop8       squashfs                                               74M /snap/core22/2411
+loop9       squashfs                                             66.8M /snap/core24/1587
+loop10      squashfs                                             66.8M /snap/core24/1643
+loop11      squashfs                                            252.6M /snap/firefox/8545
+loop12      squashfs                                            257.7M /snap/firefox/8754
+loop13      squashfs                                            140.7M /snap/gnome-3-26-1604/111
+loop14      squashfs                                            516.2M /snap/gnome-42-2204/226
+loop15      squashfs                                            531.4M /snap/gnome-42-2204/247
+loop16      squashfs                                            606.1M /snap/gnome-46-2404/153
+loop17      squashfs                                             91.7M /snap/gtk-common-themes/1535
+loop18      squashfs                                              395M /snap/mesa-2404/1165
+loop19      squashfs                                              402M /snap/mesa-2404/1781
+loop20      squashfs                                             84.4M /snap/odrive/95
+loop21      squashfs                                             84.4M /snap/odrive/96
+loop22      squashfs                                             12.9M /snap/snap-store/1113
+loop23      squashfs                                             12.2M /snap/snap-store/1216
+loop25      squashfs                                             50.1M /snap/snapd/27591
+loop26      squashfs                                              580K /snap/snapd-desktop-integration/361
+loop27      squashfs                                              828K /snap/snapd-desktop-integration/387
+loop28      squashfs                                              4.4M /snap/tree/54
+loop29      squashfs                                            614.5M /snap/gnome-46-2404/164
+loop30      squashfs                                             50.1M /snap/snapd/27710
+sda                                                                 0B 
+nvme0n1                                                         953.9G 
+├─nvme0n1p1 vfat     E6D0-C6ED                                    100M /boot/efi
+├─nvme0n1p2                                                        16M 
+├─nvme0n1p3 ext4     1737a0ef-4a75-46eb-b095-388c653958ec        93.1G /
+├─nvme0n1p4 ntfs     802C45ED2C45DF32                             625M /mnt/p4
+└─nvme0n1p5 ext4     4577584d-2cb0-4650-903b-f3dfbf668ef9       476.6G /mnt/p5

@@ -1,0 +1,5 @@
+WARNING: This output is designed for human readability. For machine-readable output, please use --format.
+IMAGE                           ID             DISK USAGE   CONTENT SIZE   EXTRA
+cloudflare/cloudflared:latest   6b599ca3e974       96.2MB         28.7MB   U    
+hello-world:latest              f9078146db2e       25.9kB         9.49kB   U    
+openvpn/openvpn-as:latest       588f5288e1cf       1.27GB          511MB   U    

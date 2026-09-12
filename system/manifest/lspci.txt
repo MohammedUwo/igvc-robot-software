@@ -1,0 +1,449 @@
+00:00.0 Host bridge [0600]: Intel Corporation Device [8086:4660] (rev 02)
+	Subsystem: Intel Corporation Device [8086:3020]
+	Flags: bus master, fast devsel, latency 0, IOMMU group 1
+	Memory at <ignored> (32-bit, non-prefetchable)
+
+00:01.0 PCI bridge [0604]: Intel Corporation 12th Gen Core Processor PCI Express x16 Controller #1 [8086:460d] (rev 02) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 122, IOMMU group 2
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	I/O behind bridge: 00003000-00003fff [size=4K]
+	Memory behind bridge: 83000000-840fffff [size=17M]
+	Prefetchable memory behind bridge: 0000006000000000-0000006401ffffff [size=16416M]
+	Capabilities: [40] Express Root Port (Slot+), MSI 00
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [98] Subsystem: Device [0000:0000]
+	Capabilities: [a0] Power Management version 3
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [220] Access Control Services
+	Capabilities: [150] Precision Time Measurement
+	Capabilities: [a30] Secondary PCI Express
+	Capabilities: [a90] Data Link Feature <?>
+	Capabilities: [a9c] Physical Layer 16.0 GT/s <?>
+	Capabilities: [edc] Lane Margining at the Receiver <?>
+	Capabilities: [adc] Extended Capability ID 0x2a
+	Capabilities: [b0c] Extended Capability ID 0x2b
+	Kernel driver in use: pcieport
+
+00:02.0 Display controller [0380]: Intel Corporation AlderLake-S GT1 [8086:4680] (rev 0c)
+	Subsystem: Intel Corporation AlderLake-S GT1 [8086:3020]
+	Flags: bus master, fast devsel, latency 0, IRQ 201, IOMMU group 0
+	Memory at 645b000000 (64-bit, non-prefetchable) [size=16M]
+	Memory at 4000000000 (64-bit, prefetchable) [size=256M]
+	I/O ports at 4000 [size=64]
+	Capabilities: [40] Vendor Specific Information: Len=0c <?>
+	Capabilities: [70] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [ac] MSI: Enable+ Count=1/1 Maskable+ 64bit-
+	Capabilities: [d0] Power Management version 2
+	Capabilities: [100] Process Address Space ID (PASID)
+	Capabilities: [200] Address Translation Service (ATS)
+	Capabilities: [300] Page Request Interface (PRI)
+	Capabilities: [320] Single Root I/O Virtualization (SR-IOV)
+	Kernel driver in use: i915
+	Kernel modules: i915, xe
+
+00:08.0 System peripheral [0880]: Intel Corporation 12th Gen Core Processor Gaussian & Neural Accelerator [8086:464f] (rev 02)
+	Subsystem: Intel Corporation Device [8086:3020]
+	Flags: fast devsel, IRQ 255, IOMMU group 3
+	Memory at 645c11f000 (64-bit, non-prefetchable) [disabled] [size=4K]
+	Capabilities: [90] MSI: Enable- Count=1/1 Maskable- 64bit-
+	Capabilities: [a0] Vendor Specific Information: Len=14 <?>
+	Capabilities: [dc] Power Management version 2
+	Capabilities: [f0] PCI Advanced Features
+
+00:14.0 USB controller [0c03]: Intel Corporation Device [8086:7ae0] (rev 11) (prog-if 30 [XHCI])
+	Subsystem: Intel Corporation Device [8086:3020]
+	Flags: bus master, medium devsel, latency 0, IRQ 131, IOMMU group 4
+	Memory at 645c100000 (64-bit, non-prefetchable) [size=64K]
+	Capabilities: [70] Power Management version 2
+	Capabilities: [80] MSI: Enable+ Count=8/8 Maskable- 64bit+
+	Capabilities: [90] Vendor Specific Information: Len=14 <?>
+	Capabilities: [b0] Vendor Specific Information: Len=00 <?>
+	Kernel driver in use: xhci_hcd
+	Kernel modules: xhci_pci
+
+00:14.2 RAM memory [0500]: Intel Corporation Device [8086:7aa7] (rev 11)
+	Subsystem: Intel Corporation Device [8086:3020]
+	Flags: fast devsel, IOMMU group 4
+	Memory at 645c118000 (64-bit, non-prefetchable) [disabled] [size=16K]
+	Memory at 645c11e000 (64-bit, non-prefetchable) [disabled] [size=4K]
+	Capabilities: [80] Power Management version 3
+
+00:14.3 Network controller [0280]: Intel Corporation Device [8086:7af0] (rev 11)
+	Subsystem: Intel Corporation Device [8086:0094]
+	Flags: bus master, fast devsel, latency 0, IRQ 18, IOMMU group 5
+	Memory at 645c114000 (64-bit, non-prefetchable) [size=16K]
+	Capabilities: [c8] Power Management version 3
+	Capabilities: [d0] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [40] Express Root Complex Integrated Endpoint, MSI 00
+	Capabilities: [80] MSI-X: Enable+ Count=16 Masked-
+	Capabilities: [100] Latency Tolerance Reporting
+	Capabilities: [164] Vendor Specific Information: ID=0010 Rev=0 Len=014 <?>
+	Kernel driver in use: iwlwifi
+	Kernel modules: iwlwifi
+
+00:16.0 Communication controller [0780]: Intel Corporation Device [8086:7ae8] (rev 11)
+	Subsystem: Intel Corporation Device [8086:3020]
+	Flags: bus master, fast devsel, latency 0, IRQ 184, IOMMU group 6
+	Memory at 645c11d000 (64-bit, non-prefetchable) [size=4K]
+	Capabilities: [50] Power Management version 3
+	Capabilities: [8c] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [a4] Vendor Specific Information: Len=14 <?>
+	Kernel driver in use: mei_me
+	Kernel modules: mei_me
+
+00:17.0 SATA controller [0106]: Intel Corporation Device [8086:7ae2] (rev 11) (prog-if 01 [AHCI 1.0])
+	Subsystem: Intel Corporation Device [8086:3020]
+	Flags: bus master, 66MHz, medium devsel, latency 0, IRQ 139, IOMMU group 7
+	Memory at 84d00000 (32-bit, non-prefetchable) [size=8K]
+	Memory at 84d03000 (32-bit, non-prefetchable) [size=256]
+	I/O ports at 4090 [size=8]
+	I/O ports at 4080 [size=4]
+	I/O ports at 4060 [size=32]
+	Memory at 84d02000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+	Capabilities: [70] Power Management version 3
+	Capabilities: [a8] SATA HBA v1.0
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+
+00:1b.0 PCI bridge [0604]: Intel Corporation Device [8086:7ac4] (rev 11) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 123, IOMMU group 8
+	Bus: primary=00, secondary=02, subordinate=6b, sec-latency=0
+	I/O behind bridge: 00005000-00007fff [size=12K]
+	Memory behind bridge: 54000000-820fffff [size=737M]
+	Prefetchable memory behind bridge: 0000006410000000-000000645a0fffff [size=1185M]
+	Capabilities: [40] Express Root Port (Slot+), MSI 00
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [98] Subsystem: Device [0000:0000]
+	Capabilities: [a0] Power Management version 3
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [220] Access Control Services
+	Capabilities: [200] L1 PM Substates
+	Capabilities: [150] Precision Time Measurement
+	Capabilities: [a30] Secondary PCI Express
+	Capabilities: [a90] Data Link Feature <?>
+	Capabilities: [a9c] Physical Layer 16.0 GT/s <?>
+	Capabilities: [edc] Lane Margining at the Receiver <?>
+	Kernel driver in use: pcieport
+
+00:1c.0 PCI bridge [0604]: Intel Corporation Device [8086:7abe] (rev 11) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 124, IOMMU group 9
+	Bus: primary=00, secondary=6c, subordinate=6c, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: 84900000-84bfffff [size=3M]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [40] Express Root Port (Slot+), MSI 00
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [98] Subsystem: Device [0000:0000]
+	Capabilities: [a0] Power Management version 3
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [220] Access Control Services
+	Capabilities: [200] L1 PM Substates
+	Capabilities: [150] Precision Time Measurement
+	Capabilities: [a30] Secondary PCI Express
+	Capabilities: [a90] Data Link Feature <?>
+	Kernel driver in use: pcieport
+
+00:1d.0 PCI bridge [0604]: Intel Corporation Device [8086:7ab0] (rev 11) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 125, IOMMU group 10
+	Bus: primary=00, secondary=6d, subordinate=6d, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: 84400000-848fffff [size=5M]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [40] Express Root Port (Slot+), MSI 00
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [98] Subsystem: Device [0000:0000]
+	Capabilities: [a0] Power Management version 3
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [220] Access Control Services
+	Capabilities: [150] Precision Time Measurement
+	Capabilities: [a30] Secondary PCI Express
+	Capabilities: [a90] Data Link Feature <?>
+	Kernel driver in use: pcieport
+
+00:1d.4 PCI bridge [0604]: Intel Corporation Device [8086:7ab4] (rev 11) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 126, IOMMU group 11
+	Bus: primary=00, secondary=6e, subordinate=6e, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: 84c00000-84cfffff [size=1M]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [40] Express Root Port (Slot+), MSI 00
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [98] Subsystem: Device [0000:0000]
+	Capabilities: [a0] Power Management version 3
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [220] Access Control Services
+	Capabilities: [200] L1 PM Substates
+	Capabilities: [150] Precision Time Measurement
+	Capabilities: [a30] Secondary PCI Express
+	Capabilities: [a90] Data Link Feature <?>
+	Capabilities: [a9c] Physical Layer 16.0 GT/s <?>
+	Capabilities: [edc] Lane Margining at the Receiver <?>
+	Kernel driver in use: pcieport
+
+00:1f.0 ISA bridge [0601]: Intel Corporation Device [8086:7a84] (rev 11)
+	Subsystem: Intel Corporation Device [8086:3020]
+	Flags: bus master, fast devsel, latency 0, IOMMU group 12
+
+00:1f.3 Audio device [0403]: Intel Corporation Device [8086:7ad0] (rev 11)
+	Subsystem: Intel Corporation Device [8086:3020]
+	Flags: bus master, fast devsel, latency 32, IRQ 202, IOMMU group 12
+	Memory at 645c110000 (64-bit, non-prefetchable) [size=16K]
+	Memory at 645c000000 (64-bit, non-prefetchable) [size=1M]
+	Capabilities: [50] Power Management version 3
+	Capabilities: [80] Vendor Specific Information: Len=14 <?>
+	Capabilities: [60] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel, snd_sof_pci_intel_tgl
+
+00:1f.4 SMBus [0c05]: Intel Corporation Device [8086:7aa3] (rev 11)
+	Subsystem: Intel Corporation Device [8086:3020]
+	Flags: medium devsel, IRQ 18, IOMMU group 12
+	Memory at 645c11c000 (64-bit, non-prefetchable) [size=256]
+	I/O ports at efa0 [size=32]
+	Kernel driver in use: i801_smbus
+	Kernel modules: i2c_i801
+
+00:1f.5 Serial bus controller [0c80]: Intel Corporation Device [8086:7aa4] (rev 11)
+	Subsystem: Intel Corporation Device [8086:3020]
+	Flags: fast devsel, IOMMU group 12
+	Memory at 52800000 (32-bit, non-prefetchable) [size=4K]
+	Kernel driver in use: intel-spi
+	Kernel modules: spi_intel_pci
+
+01:00.0 VGA compatible controller [0300]: NVIDIA Corporation GA106 [GeForce RTX 3060 Lite Hash Rate] [10de:2504] (rev a1) (prog-if 00 [VGA controller])
+	Subsystem: ASUSTeK Computer Inc. GA106 [GeForce RTX 3060 Lite Hash Rate] [1043:8810]
+	Flags: fast devsel, IRQ 255, IOMMU group 13
+	Memory at 83000000 (32-bit, non-prefetchable) [size=16M]
+	Memory at 6000000000 (64-bit, prefetchable) [size=16G]
+	Memory at 6400000000 (64-bit, prefetchable) [size=32M]
+	I/O ports at 3000 [size=128]
+	Expansion ROM at 000c0000 [disabled] [size=128K]
+	Capabilities: [60] Power Management version 3
+	Capabilities: [68] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [78] Express Legacy Endpoint, MSI 00
+	Capabilities: [b4] Vendor Specific Information: Len=14 <?>
+	Capabilities: [100] Virtual Channel
+	Capabilities: [250] Latency Tolerance Reporting
+	Capabilities: [258] L1 PM Substates
+	Capabilities: [128] Power Budgeting <?>
+	Capabilities: [420] Advanced Error Reporting
+	Capabilities: [600] Vendor Specific Information: ID=0001 Rev=1 Len=024 <?>
+	Capabilities: [900] Secondary PCI Express
+	Capabilities: [bb0] Physical Resizable BAR
+	Capabilities: [c1c] Physical Layer 16.0 GT/s <?>
+	Capabilities: [d00] Lane Margining at the Receiver <?>
+	Capabilities: [e00] Data Link Feature <?>
+	Kernel modules: nvidiafb, nouveau
+
+01:00.1 Audio device [0403]: NVIDIA Corporation Device [10de:228e] (rev a1)
+	Subsystem: ASUSTeK Computer Inc. Device [1043:8810]
+	Flags: bus master, fast devsel, latency 0, IRQ 17, IOMMU group 13
+	Memory at 84080000 (32-bit, non-prefetchable) [size=16K]
+	Capabilities: [60] Power Management version 3
+	Capabilities: [68] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [78] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [160] Data Link Feature <?>
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+
+02:00.0 PCI bridge [0604]: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] [8086:1136] (rev 02) (prog-if 00 [Normal decode])
+	Physical Slot: 24
+	Flags: bus master, fast devsel, latency 0, IRQ 16, IOMMU group 14
+	Bus: primary=02, secondary=03, subordinate=6b, sec-latency=0
+	I/O behind bridge: 00005000-00006fff [size=8K]
+	Memory behind bridge: 54000000-81efffff [size=735M]
+	Prefetchable memory behind bridge: 0000006410000000-000000645a0fffff [size=1185M]
+	Capabilities: [80] Power Management version 3
+	Capabilities: [88] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [ac] Subsystem: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] [8086:3020]
+	Capabilities: [c0] Express Upstream Port, MSI 00
+	Capabilities: [50] Capability ID 0x15 [0000]
+	Capabilities: [100] Device Serial Number 4c-2c-98-51-37-00-aa-00
+	Capabilities: [200] Advanced Error Reporting
+	Capabilities: [300] Virtual Channel
+	Capabilities: [400] Power Budgeting <?>
+	Capabilities: [500] Vendor Specific Information: ID=1234 Rev=1 Len=100 <?>
+	Capabilities: [600] Vendor Specific Information: ID=8086 Rev=2 Len=064 <?>
+	Capabilities: [700] Secondary PCI Express
+	Capabilities: [800] Latency Tolerance Reporting
+	Capabilities: [a00] L1 PM Substates
+	Capabilities: [b00] Precision Time Measurement
+	Kernel driver in use: pcieport
+
+03:00.0 PCI bridge [0604]: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] [8086:1136] (rev 02) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 127, IOMMU group 15
+	Bus: primary=03, secondary=04, subordinate=04, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: [disabled]
+	Prefetchable memory behind bridge: 000000645a000000-000000645a0fffff [size=1M]
+	Capabilities: [80] Power Management version 3
+	Capabilities: [88] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [ac] Subsystem: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] [8086:3020]
+	Capabilities: [c0] Express Downstream Port (Slot+), MSI 00
+	Capabilities: [50] Capability ID 0x15 [0000]
+	Capabilities: [100] Device Serial Number 4c-2c-98-51-37-00-aa-00
+	Capabilities: [200] Advanced Error Reporting
+	Capabilities: [300] Virtual Channel
+	Capabilities: [400] Power Budgeting <?>
+	Capabilities: [500] Vendor Specific Information: ID=1234 Rev=1 Len=100 <?>
+	Capabilities: [600] Vendor Specific Information: ID=8086 Rev=2 Len=064 <?>
+	Capabilities: [900] Access Control Services
+	Capabilities: [c00] Designated Vendor-Specific: Vendor=8086 ID=0006 Rev=0 Len=16 <?>
+	Kernel driver in use: pcieport
+
+03:01.0 PCI bridge [0604]: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] [8086:1136] (rev 02) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 128, IOMMU group 16
+	Bus: primary=03, secondary=05, subordinate=37, sec-latency=0
+	I/O behind bridge: 00005000-00005fff [size=4K]
+	Memory behind bridge: 6af00000-81dfffff [size=367M]
+	Prefetchable memory behind bridge: 0000006435000000-0000006459ffffff [size=592M]
+	Capabilities: [80] Power Management version 3
+	Capabilities: [88] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [ac] Subsystem: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] [8086:3020]
+	Capabilities: [c0] Express Downstream Port (Slot+), MSI 00
+	Capabilities: [50] Capability ID 0x15 [0000]
+	Capabilities: [100] Device Serial Number 4c-2c-98-51-37-00-aa-00
+	Capabilities: [200] Advanced Error Reporting
+	Capabilities: [300] Virtual Channel
+	Capabilities: [400] Power Budgeting <?>
+	Capabilities: [500] Vendor Specific Information: ID=1234 Rev=1 Len=100 <?>
+	Capabilities: [600] Vendor Specific Information: ID=8086 Rev=2 Len=064 <?>
+	Capabilities: [900] Access Control Services
+	Capabilities: [c00] Designated Vendor-Specific: Vendor=8086 ID=0006 Rev=0 Len=16 <?>
+	Kernel driver in use: pcieport
+
+03:02.0 PCI bridge [0604]: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] [8086:1136] (rev 02) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 129, IOMMU group 17
+	Bus: primary=03, secondary=38, subordinate=38, sec-latency=0
+	I/O behind bridge: [disabled]
+	Memory behind bridge: 81e00000-81efffff [size=1M]
+	Prefetchable memory behind bridge: [disabled]
+	Capabilities: [80] Power Management version 3
+	Capabilities: [88] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [ac] Subsystem: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] [8086:3020]
+	Capabilities: [c0] Express Downstream Port (Slot+), MSI 00
+	Capabilities: [50] Capability ID 0x15 [0000]
+	Capabilities: [100] Device Serial Number 4c-2c-98-51-37-00-aa-00
+	Capabilities: [200] Advanced Error Reporting
+	Capabilities: [300] Virtual Channel
+	Capabilities: [400] Power Budgeting <?>
+	Capabilities: [500] Vendor Specific Information: ID=1234 Rev=1 Len=100 <?>
+	Capabilities: [900] Access Control Services
+	Capabilities: [c00] Designated Vendor-Specific: Vendor=8086 ID=0006 Rev=0 Len=16 <?>
+	Kernel driver in use: pcieport
+
+03:03.0 PCI bridge [0604]: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] [8086:1136] (rev 02) (prog-if 00 [Normal decode])
+	Flags: bus master, fast devsel, latency 0, IRQ 130, IOMMU group 18
+	Bus: primary=03, secondary=39, subordinate=6b, sec-latency=0
+	I/O behind bridge: 00006000-00006fff [size=4K]
+	Memory behind bridge: 54000000-6aefffff [size=367M]
+	Prefetchable memory behind bridge: 0000006410000000-0000006434ffffff [size=592M]
+	Capabilities: [80] Power Management version 3
+	Capabilities: [88] MSI: Enable+ Count=1/1 Maskable- 64bit+
+	Capabilities: [ac] Subsystem: Intel Corporation Thunderbolt 4 Bridge [Maple Ridge 4C 2020] [8086:3020]
+	Capabilities: [c0] Express Downstream Port (Slot+), MSI 00
+	Capabilities: [50] Capability ID 0x15 [0000]
+	Capabilities: [100] Device Serial Number 4c-2c-98-51-37-00-aa-00
+	Capabilities: [200] Advanced Error Reporting
+	Capabilities: [300] Virtual Channel
+	Capabilities: [400] Power Budgeting <?>
+	Capabilities: [500] Vendor Specific Information: ID=1234 Rev=1 Len=100 <?>
+	Capabilities: [600] Vendor Specific Information: ID=8086 Rev=2 Len=064 <?>
+	Capabilities: [900] Access Control Services
+	Capabilities: [c00] Designated Vendor-Specific: Vendor=8086 ID=0006 Rev=0 Len=16 <?>
+	Kernel driver in use: pcieport
+
+04:00.0 USB controller [0c03]: Intel Corporation Thunderbolt 4 NHI [Maple Ridge 4C 2020] [8086:1137] (prog-if 40 [USB4 Host Interface])
+	Subsystem: Intel Corporation Thunderbolt 4 NHI [Maple Ridge 4C 2020] [8086:3020]
+	Flags: bus master, fast devsel, latency 0, IRQ 16, IOMMU group 19
+	Memory at 645a000000 (64-bit, prefetchable) [size=256K]
+	Memory at 645a040000 (64-bit, prefetchable) [size=4K]
+	Capabilities: [80] Power Management version 3
+	Capabilities: [88] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [c0] Express Endpoint, MSI 00
+	Capabilities: [a0] MSI-X: Enable+ Count=16 Masked-
+	Capabilities: [100] Device Serial Number 4c-2c-98-51-37-00-aa-00
+	Capabilities: [200] Advanced Error Reporting
+	Capabilities: [300] Virtual Channel
+	Capabilities: [400] Power Budgeting <?>
+	Capabilities: [500] Vendor Specific Information: ID=1234 Rev=1 Len=100 <?>
+	Capabilities: [600] Latency Tolerance Reporting
+	Kernel driver in use: thunderbolt
+	Kernel modules: thunderbolt
+
+38:00.0 USB controller [0c03]: Intel Corporation Thunderbolt 4 USB Controller [Maple Ridge 4C 2020] [8086:1138] (prog-if 30 [XHCI])
+	Flags: fast devsel, IRQ 156, IOMMU group 20
+	Memory at 81e00000 (64-bit, non-prefetchable) [size=64K]
+	Capabilities: [70] Power Management version 3
+	Capabilities: [80] MSI: Enable+ Count=8/8 Maskable- 64bit+
+	Capabilities: [90] Vendor Specific Information: Len=14 <?>
+	Capabilities: [b0] Vendor Specific Information: Len=00 <?>
+	Capabilities: [bc] Express Endpoint, MSI 00
+	Capabilities: [100] Latency Tolerance Reporting
+	Kernel driver in use: xhci_hcd
+	Kernel modules: xhci_pci
+
+6c:00.0 Ethernet controller [0200]: Intel Corporation Ethernet Controller I225-LM [8086:15f2] (rev 03)
+	Subsystem: Intel Corporation Ethernet Controller I225-LM [8086:3020]
+	Flags: bus master, fast devsel, latency 0, IRQ 18, IOMMU group 21
+	Memory at 84a00000 (32-bit, non-prefetchable) [size=1M]
+	Memory at 84b00000 (32-bit, non-prefetchable) [size=16K]
+	Expansion ROM at 84900000 [disabled] [size=1M]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable+ 64bit+
+	Capabilities: [70] MSI-X: Enable+ Count=5 Masked-
+	Capabilities: [a0] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Device Serial Number 1c-69-7a-ff-ff-d8-ac-66
+	Capabilities: [1c0] Latency Tolerance Reporting
+	Capabilities: [1f0] Precision Time Measurement
+	Capabilities: [1e0] L1 PM Substates
+	Kernel driver in use: igc
+	Kernel modules: igc
+
+6d:00.0 Ethernet controller [0200]: Aquantia Corp. Device [1d6a:14c0] (rev 03)
+	Subsystem: Intel Corporation Device [8086:3021]
+	Flags: bus master, fast devsel, latency 0, IRQ 16, IOMMU group 22
+	Memory at 84800000 (64-bit, non-prefetchable) [size=512K]
+	Memory at 848a0000 (64-bit, non-prefetchable) [size=4K]
+	Memory at 84400000 (64-bit, non-prefetchable) [size=4M]
+	Expansion ROM at 84880000 [disabled] [size=128K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/32 Maskable+ 64bit+
+	Capabilities: [70] Express Endpoint, MSI 00
+	Capabilities: [b0] MSI-X: Enable+ Count=32 Masked-
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [148] Virtual Channel
+	Capabilities: [168] Device Serial Number 00-00-00-00-00-00-00-00
+	Capabilities: [178] Secondary PCI Express
+	Capabilities: [198] Physical Layer 16.0 GT/s <?>
+	Capabilities: [1bc] Lane Margining at the Receiver <?>
+	Capabilities: [1d4] Latency Tolerance Reporting
+	Capabilities: [1dc] L1 PM Substates
+	Capabilities: [1ec] Vendor Specific Information: ID=0002 Rev=4 Len=100 <?>
+	Capabilities: [2ec] Data Link Feature <?>
+	Capabilities: [2f8] Precision Time Measurement
+	Capabilities: [304] Vendor Specific Information: ID=0003 Rev=1 Len=054 <?>
+	Kernel driver in use: atlantic
+	Kernel modules: atlantic
+
+6e:00.0 Non-Volatile memory controller [0108]: Realtek Semiconductor Co., Ltd. Device [10ec:5765] (rev 01) (prog-if 02 [NVM Express])
+	Subsystem: Realtek Semiconductor Co., Ltd. Device [10ec:5765]
+	Flags: bus master, fast devsel, latency 0, IRQ 16, IOMMU group 23
+	Memory at 84c00000 (64-bit, non-prefetchable) [size=16K]
+	Memory at 84c04000 (32-bit, non-prefetchable) [size=8K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/8 Maskable- 64bit+
+	Capabilities: [70] Express Endpoint, MSI 00
+	Capabilities: [b0] MSI-X: Enable+ Count=5 Masked-
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [148] Device Serial Number 00-00-00-01-00-4c-e0-00
+	Capabilities: [158] Secondary PCI Express
+	Capabilities: [178] Latency Tolerance Reporting
+	Capabilities: [180] L1 PM Substates
+	Capabilities: [190] Vendor Specific Information: ID=0001 Rev=1 Len=038 <?>
+	Kernel driver in use: nvme
+	Kernel modules: nvme
+

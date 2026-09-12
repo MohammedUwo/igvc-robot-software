@@ -1,0 +1,13 @@
+label: gpt
+label-id: CB3851D8-7055-424D-97B1-1A92F409A4F5
+device: /dev/nvme0n1
+unit: sectors
+first-lba: 34
+last-lba: 2000409230
+sector-size: 512
+
+/dev/nvme0n1p1 : start=        2048, size=      204800, type=C12A7328-F81F-11D2-BA4B-00A0C93EC93B, uuid=65D9B7AC-21BC-4D3C-B448-731827D0AF8E, name="EFI system partition"
+/dev/nvme0n1p2 : start=      206848, size=       32768, type=E3C9E316-0B5C-4DB8-817D-F92DF00215AE, uuid=215883FF-B3DD-45C3-A11D-5EDE31E577A5, name="Microsoft reserved partition"
+/dev/nvme0n1p3 : start=      239616, size=   195311616, type=0FC63DAF-8483-4772-8E79-3D69D8477DE4, uuid=B00DBC13-D614-45B7-ABD3-645CE96EADEF
+/dev/nvme0n1p4 : start=  1999126528, size=     1280000, type=DE94BBA4-06D1-4D40-A16A-BFD50179D6AC, uuid=2686050B-A509-4949-89C4-8E8AFCFB2AB8, attrs="RequiredPartition"
+/dev/nvme0n1p5 : start=   999684096, size=   999442432, type=0FC63DAF-8483-4772-8E79-3D69D8477DE4, uuid=1F1A3057-59D0-4072-BBC8-A0D6F2882D37

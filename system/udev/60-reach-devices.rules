@@ -1,0 +1,6 @@
+SUBSYSTEMS=="usb", ATTR{idVendor}=="1f3a", ATTR{idProduct}=="efe8", GROUP="plugdev"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="3032", GROUP="dialout"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="3032", GROUP="disk"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="3032", MODE="0666"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="3032", ENV{UDISKS_AUTO}="0"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="3032", ENV{ID_MM_DEVICE_IGNORE}="1", ENV{ID_MM_PORT_IGNORE}="1"
