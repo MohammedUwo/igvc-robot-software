@@ -20,6 +20,8 @@ uncommitted working tree on that one machine. Treat this repo as the authoritati
 | `system/udev/` | udev rules that give the robot's hardware stable device names. Copy to `/etc/udev/rules.d/` on any new install. |
 | `system/manifest/` | NUC hardware and package inventory — partition table, fstab, installed packages, `lspci`/`lsusb`/`dmidecode` |
 | `legacy/pathfinder-led/` | Safety-light control from the 2021–22 robot (ROS 1 + Arduino). Reference for the IGVC safety-light requirement. |
+| `hardware/schematics/` | EasyEDA exports for all 18 PCB projects — schematics as SVG, board layouts as fab PDFs |
+| `photos/` | 156 reference photos of the robot and the lab stock |
 
 ## Related repositories
 
