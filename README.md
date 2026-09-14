@@ -17,11 +17,14 @@ today so none of it gets lost again.
 | `simulation/` | 1 package | Seeded IGVC course generator — makes randomised AutoNav worlds for Gazebo |
 | `hardware/schematics/` | 18 projects | Every EasyEDA board the team has designed — schematics as SVG, layouts as fab PDFs. E-stop RX/TX, LED controller, power distribution, IMU handler, and the rest |
 | `photos/` | 156 photos | The robot (108) and the lab stock (48), September 2026 |
-| `docs/` | 5 files | The build plan, a long writeup of how the autonomy works, the lab inventory, an index of the NUC backup, and the course-generator handoff |
+| `docs/` | 6 files | Handoff, build plan, a long writeup of how the autonomy works, the lab inventory, an index of the NUC backup, and the course-generator handoff |
 | `system/` | 22 files | What the NUC was: partition table, package lists, hardware inventory, and the 5 udev rules that give the sensors stable device names |
 | `legacy/` | 2 files | Safety-light code from the 2021–22 robot. Still the best reference we have for that. |
 
-Start with [`docs/qualification-plan.md`](docs/qualification-plan.md) if you want to know what
+**New here, or picking this up cold? Read [`docs/HANDOFF.md`](docs/HANDOFF.md) first** — goal,
+every link, current state, open decisions, and what to do next.
+
+Then [`docs/qualification-plan.md`](docs/qualification-plan.md) if you want to know what
 needs doing, [`docs/lab-inventory.md`](docs/lab-inventory.md) if you're new and looking for a part,
 or [`autonomy/getsensors/docs/hardware_inventory.md`](autonomy/getsensors/docs/hardware_inventory.md)
 for the real device serials, ports and firmware versions.
