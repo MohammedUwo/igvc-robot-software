@@ -15,7 +15,7 @@ today so none of it gets lost again.
 |---|---:|---|
 | `autonomy/` | 2 workspaces | `diff_drive_robot` — the driving stack: lane detection, obstacle avoidance, GPS waypoints, behaviour arbitration, Gazebo model. `getsensors` — the hardware layer: verified drivers and configs for the lidar, cameras, GPS, ODrive and e-stop board |
 | `simulation/` | 1 package | Seeded IGVC course generator — makes randomised AutoNav worlds for Gazebo |
-| `hardware/schematics/` | 18 projects | Every EasyEDA board the team has designed — schematics as SVG, layouts as fab PDFs. E-stop RX/TX, LED controller, power distribution, IMU handler, and the rest |
+| `hardware/` | 18 projects + 1 doc | Every EasyEDA board the team has designed — schematics as SVG, layouts as fab PDFs. E-stop RX/TX, LED controller, power distribution, IMU handler, and the rest. Plus [`wireless-estop.md`](hardware/wireless-estop.md) — the LoRa heartbeat build that closes the fail-unsafe wireless e-stop |
 | `photos/` | 156 photos | The robot (108) and the lab stock (48), September 2026 |
 | `docs/` | 6 files | Handoff, build plan, a long writeup of how the autonomy works, the lab inventory, an index of the NUC backup, and the course-generator handoff |
 | `system/` | 22 files | What the NUC was: partition table, package lists, hardware inventory, and the 5 udev rules that give the sensors stable device names |

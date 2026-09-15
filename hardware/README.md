@@ -1,5 +1,16 @@
 # Hardware
 
+## wireless-estop.md
+
+[`wireless-estop.md`](wireless-estop.md) — the LoRa heartbeat design that closes Gate 05. Handheld
+Adafruit Feather M0 transmitter sends a continuous "all clear"; the RAK3172 receiver board holds the
+drive relay closed only while that heartbeat keeps arriving. Covers hardware, pin assignments, radio
+settings, wiring, both firmware sketches, the bench commissioning sequence, and the items still to
+verify before competition.
+
+Boards: [`schematics/E-Stop Receiver Board`](schematics/E-Stop%20Receiver%20Board) (RX, "RUTGERS
+IGVC ESTOP RX REV 1") and [`schematics/E-stop remote`](schematics/E-stop%20remote) (TX).
+
 ## schematics/
 
 EasyEDA exports for all 18 Rutgers IGVC PCB projects — schematics as `.svg`, board layouts as

@@ -26,7 +26,7 @@ targets them and ignores everything else.
 | 02 | Width | 2–4 ft | Unmeasured | Prime suspect for the 2026 mechanical failure. Design the new chassis inside 4 ft. |
 | 03 | Height | ≤6 ft, excl. antenna | Unmeasured | Record it. |
 | 04 | Mechanical E-stop | Red, ≥1 in, push-to-stop, **centre rear, 2–4 ft high**, hardware only | Wrong place | Was on the front mast. The new chassis needs a rear mast or plate at that height — design it in now. |
-| 05 | Wireless E-stop | ≥100 ft, hardware only | **Fail-unsafe** | ESP-NOW firmware has no heartbeat: link loss leaves the robot driving. Invert it — transmitter pings continuously, receiver drops the relay after ~200 ms of silence. Then range-test past 100 ft. |
+| 05 | Wireless E-stop | ≥100 ft, hardware only | **Fail-unsafe** | ESP-NOW firmware has no heartbeat: link loss leaves the robot driving. Invert it — transmitter pings continuously, receiver drops the relay after ~200 ms of silence. Then range-test past 100 ft. Build doc: [`../hardware/wireless-estop.md`](../hardware/wireless-estop.md). |
 | 06 | Safety light | Solid = powered, flashing = autonomous | Unwired | Amber bars are in the lab. Reference implementation in `legacy/pathfinder-led/`. |
 | 07 | Speed | ≥1 mph avg, ≤5 mph, hardware-governed | Nearly met | ~1.75 mph measured. Set ODrive `vel_limit` deliberately and record it — no changes after you pass. |
 | 08 | Lane following | Detect and follow | Code exists, untested on hardware | `detect_line.py` + `behavior_node.py`. Needs a real camera feed and tuning. |

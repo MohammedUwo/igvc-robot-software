@@ -90,7 +90,8 @@ Each of these was discovered during this work and isn't obvious from the code.
 2. **The wireless e-stop is fail-unsafe.** The ESP-NOW firmware has no heartbeat — if the link
    drops, the robot keeps driving. The transmitter source says so in its own comments. IGVC
    requires ≥100 ft, hardware-based. Fix: transmitter pings continuously, receiver drops the relay
-   after ~200 ms of silence.
+   after ~200 ms of silence. That replacement is now specified end to end in
+   [`../hardware/wireless-estop.md`](../hardware/wireless-estop.md) — LoRa rather than ESP-NOW.
 3. **The AutoNav course is asphalt**, with ramps to 15% grade. Not grass. This is what makes omni
    wheels viable at all.
 4. **Free-rolling omni wheels don't resist lateral motion.** On a 15% cross-slope the unpowered end
@@ -130,7 +131,8 @@ Each of these was discovered during this work and isn't obvious from the code.
 
 Phases 1 and 2 are bench work and don't wait on the chassis.
 
-1. **E-stop heartbeat rewrite** — hard gate, testable on a table with two ESP32s and a relay.
+1. **E-stop heartbeat rewrite** — hard gate, testable on a bench with the two radios and a relay.
+   Design, firmware and commissioning steps: [`../hardware/wireless-estop.md`](../hardware/wireless-estop.md).
 2. **Safety light** — hard gate. Reference implementation in `legacy/pathfinder-led/`.
 3. **Sensor bring-up** with a non-empty TF tree. Use `autonomy/getsensors/` — it already has the
    launch files and the udev rules.
